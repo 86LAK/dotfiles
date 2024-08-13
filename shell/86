@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Create a new tmux session in detached mode named '86'
+tmux new-session -d -s 86
+tmux split-window -h
+
+tmux split-window -v
+# Resize the top-right pane before running cmatrix
+tmux select-pane -t 1
+total_height=$(tmux display-message -p '#{window_height}')
+new_height=$((total_height / 8))
+tmux resize-pane -y $new_height
+
+# Run 'cmatrix -C red' in the top-right pane
+tmux select-pane -t 1
+tmux send-keys "cmatrix -C red" C-m
+
+# Run 'neofetch' in the bottom-right pane
+tmux select-pane -t 2
+tmux send-keys "neofetch" C-m
+
+
+# Select the original (left) pane
+tmux select-pane -t 0
+
+# Attach to the tmux session
+tmux attach-session -t 86

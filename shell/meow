@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-base64 -d <<<"H4sIAAAAAAAAAz3KsQkAMQxD0d5TiDROwPItFLA2yAIZPhcO7hUfFUJl4aqgtyZmWQ+mssI7PnuKz7Y73wMdE4PqCCysYfiJt1Ol5rQD94ugmFwAAAA=" | gunzip

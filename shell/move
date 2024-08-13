@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-class=${1^^}
-cd ~
-cd  ./Documents/University/${class:0:4}/${class:4:4}
