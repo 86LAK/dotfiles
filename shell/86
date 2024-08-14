@@ -22,6 +22,13 @@ tmux send-keys "neofetch" C-m
 
 # Select the original (left) pane
 tmux select-pane -t 0
+# tmux send-keys "awk 'print "\033[31m"$0"\033[033[033["}' ~/Applications/dotfiles/shell/8686" C-m
+
+awk_cmd='awk '\''{print "\033[31m" $0 "\033[0m"}'\'' ~/Applications/dotfiles/shell/8686'
+tmux send-keys "stty -echo" C-m
+tmux send-keys "$awk_cmd" C-m
+tmux send-keys "stty echo" C-m
+
 
 # Attach to the tmux session
 tmux attach-session -t 86

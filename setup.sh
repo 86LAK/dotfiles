@@ -4,6 +4,7 @@
 # You have to run CTRL + A + I in tmux
 # For copilot you have to run :Copilot Setup
 
+sudo rm -f /usr/local/bin/shell
 chmod +x ./shell/*
 sudo ln ./shell/* /usr/local/bin/
 
