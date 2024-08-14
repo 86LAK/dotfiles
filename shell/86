@@ -26,6 +26,7 @@ tmux select-pane -t 0
 
 awk_cmd='awk '\''{print "\033[31m" $0 "\033[0m"}'\'' ~/Applications/dotfiles/shell/8686'
 tmux send-keys "stty -echo" C-m
+tmux send-keys "clear" C-m
 tmux send-keys "$awk_cmd" C-m
 tmux send-keys "stty echo" C-m
 
