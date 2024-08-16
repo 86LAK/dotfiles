@@ -10,6 +10,10 @@ tmux select-pane -t 1
 # Run 'cmatrix -C red' in the top-right pane
 #tmux select-pane -t 1
 #tmux send-keys "cmatrix -C red" C-m
+
+cmd='unimatrix -c red -s 86 -u '\''Arch Linux'\'''
+tmux send-keys "$cmd" C-m
+
 total_height=$(tmux display-message -p '#{window_height}')
 new_height=$((total_height / 8))
 tmux resize-pane -y $new_height
