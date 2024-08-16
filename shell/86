@@ -7,18 +7,21 @@ tmux split-window -h
 tmux split-window -v
 # Resize the top-right pane before running cmatrix
 tmux select-pane -t 1
+# Run 'cmatrix -C red' in the top-right pane
+#tmux select-pane -t 1
+#tmux send-keys "cmatrix -C red" C-m
 total_height=$(tmux display-message -p '#{window_height}')
 new_height=$((total_height / 8))
 tmux resize-pane -y $new_height
 
-# Run 'cmatrix -C red' in the top-right pane
-tmux select-pane -t 1
-tmux send-keys "cmatrix -C red" C-m
+
 
 # Run 'neofetch' in the bottom-right pane
 tmux select-pane -t 2
-tmux send-keys "neofetch" C-m
-
+tmux send-keys "stty -echo" C-m
+tmux send-keys "clear" C-m
+tmux send-keys "neofetch --ascii_colors 1 1 1 1  --colors 1 1 1 1 1 3" C-m
+tmux send-keys "stty echo" C-m
 
 # Select the original (left) pane
 tmux select-pane -t 0

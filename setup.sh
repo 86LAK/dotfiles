@@ -6,7 +6,8 @@
 
 sudo rm -f /usr/local/bin/shell
 chmod +x ./shell/*
-sudo ln ./shell/* /usr/local/bin/
+#sudo ln -f ./shell/* /usr/local/bin/
+sudo cp ./shell/* /usr/local/bin/
 
 # Move configs
 cp ./conf/.bashrc ~/.bashrc
