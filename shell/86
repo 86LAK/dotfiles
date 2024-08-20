@@ -11,7 +11,7 @@ tmux select-pane -t 1
 #tmux select-pane -t 1
 #tmux send-keys "cmatrix -C red" C-m
 
-cmd='unimatrix -c red -s 86 -u '\''Arch Linux'\'''
+cmd='unimatrix -c red -s 86 -u '\''Arch 86'\'''
 tmux send-keys "$cmd" C-m
 
 total_height=$(tmux display-message -p '#{window_height}')

@@ -33,3 +33,6 @@ fi
 
 # Install neovim config
 git clone https://github.com/86LAK/Neovim-Config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
+# Copy alacritty terminal config
+cp ./alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
