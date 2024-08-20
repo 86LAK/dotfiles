@@ -14,7 +14,39 @@ startup_mode = "Maximized"
 title ="86LAK"
 
 
-save_to_clipboard = true
 
 [font.normal]
 family = "Hack Nerd Font Mono"
+
+
+# Default colors
+[colors.primary]
+#background = '#270d06'
+#foreground = '#d9d9d9'
+background = '#000000'
+foreground = '#d9d9d9'
+
+
+
+# Normal colors
+[colors.normal]
+black   = '#330000'
+red     = '#ff3300'
+green   = '#4cd964'
+yellow  = '#ffcc00'
+blue    = '#0095ff'
+magenta = '#ff2d55'
+cyan    = '#5ac8fa'
+white   = '#ffffff'
+
+# Bright colors
+[colors.bright]
+black   = '#663300'
+red     = '#ff6633'
+green   = '#ff9966'
+yellow  = '#ffcc99'
+blue    = '#ffcc33'
+magenta = '#ff9966'
+cyan    = '#ffcc99'
+white   = '#d9d9d9'
+
