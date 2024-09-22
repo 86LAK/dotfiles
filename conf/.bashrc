@@ -34,3 +34,5 @@ alias Please='sudo'
 alias vi='nvim'
 alias nano='nvim'#
 
+
+export PATH="$PATH:/home/lakshan/Applications/flutter/bin"
