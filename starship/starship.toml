@@ -23,15 +23,12 @@ $time  \n \
 palette = "rose-pine"
 
 [palettes.rose-pine]
-overlay = '#26233a'
-love = '#eb6f92'
-gold = '#f6c177'
-#rose = '#ebbcba'
-rose = '#B42110' 
-#pine = '#31748f'
-pine = '#800000'
-foam = '#9ccfd8'
-#iris = '#c4a7e7'
+overlay = '#1c162e'
+love = '#3c162e'
+gold = '#7c162e'
+rose = '#9c162e' 
+pine = '#FFBF00'
+foam = '#9c162e'
 iris = '#FF0000'
 
 [directory]
