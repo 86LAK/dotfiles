@@ -30,9 +30,15 @@ if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
+# Install yay
+sudo pacman -S yay
 
 # Install neovim config
 git clone https://github.com/86LAK/Neovim-Config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 # Copy alacritty terminal config
 cp ./alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+
+# Install and copy statrship config
+yay -S starship
+cp ./starship/starship.toml ~/.config/starship.toml
