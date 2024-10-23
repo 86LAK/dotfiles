@@ -1,11 +1,11 @@
 [window]
-padding.x = 10
-padding.y = 10
+padding.x = 0
+padding.y = 0
 
 
 decorations = "Full"
 
-opacity = 0.8
+opacity = 0.7
 
 option_as_alt="Both"
 
@@ -30,23 +30,56 @@ foreground = '#d9d9d9'
 
 # Normal colors
 [colors.normal]
-black   = '#330000'
-red     = '#ff3300'
-green   = '#4cd964'
-yellow  = '#ffcc00'
-blue    = '#0095ff'
-magenta = '#ff2d55'
-cyan    = '#5ac8fa'
-white   = '#ffffff'
+black   = '#1C162E' 
+red     = '#3C162E' 
+green   = '#5C162E' 
+yellow  = '#7c162e' 
+blue    = '#9C162E' 
+magenta = '#c43973' 
+cyan    = '#ffbf00' 
+white   = '#ffffff' 
 
 # Bright colors
 [colors.bright]
-black   = '#663300'
-red     = '#ff6633'
-green   = '#ff9966'
-yellow  = '#ffcc99'
-blue    = '#ffcc33'
-magenta = '#ff9966'
-cyan    = '#ffcc99'
-white   = '#d9d9d9'
+black   = '#1C162E' 
+red     = '#3C162E' 
+green   = '#5C162E' 
+yellow  = '#7c162e' 
+blue    = '#9C162E' 
+magenta = '#c43973' 
+cyan    = '#ffbf00' 
+white   = '#ffffff' 
+
+# Normal colors
+# [colors.normal]
+# black   = '#330000'
+# red     = '#ff3300'
+# green   = '#4cd964'
+# yellow  = '#ffcc00'
+# blue    = '#0095ff'
+# magenta = '#ff2d55'
+# cyan    = '#5ac8fa'
+# white   = '#ffffff'
+
+# Bright colors
+# [colors.bright]
+# black   = '#663300'
+# red     = '#ff6633'
+# green   = '#ff9966'
+# yellow  = '#ffcc99'
+# blue    = '#ffcc33'
+# magenta = '#ff9966'
+# cyan    = '#ffcc99'
+# white   = '#d9d9d9'
+
+# [colors.normal]
+# black   = '#1C162E' # overlay
+# red     = '#C43973' # love
+# green   = '#5C162E' # pine 
+# yellow  = '#FFBF00' # gold 
+# blue    = '#9C162E' # foam 
+# magenta = '#ff2d55' # iris 
+# cyan    = '#3C162E' # rose 
+# white   = '#ffffff' # text
+
 
