@@ -33,7 +33,6 @@ alias ls='ls --color=auto'
 alias Please='sudo'
 alias vi='nvim'
 alias nano='nvim'#
-alias yeet="yay -Rns"
-
+alias yeet='yay -Rns'
 
 export PATH="$PATH:/home/lakshan/Applications/flutter/bin"
