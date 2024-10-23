@@ -24,7 +24,7 @@ tmux resize-pane -y $new_height
 tmux select-pane -t 2
 tmux send-keys "stty -echo" C-m
 tmux send-keys "clear" C-m
-tmux send-keys "neofetch --ascii_colors 1 1 1 1  --colors 1 1 1 1 1 3" C-m
+tmux send-keys "neofetch --ascii_colors 4 4 4 4  --colors 4 6 6 4 6 5" C-m
 tmux send-keys "stty echo" C-m
 
 # Select the original (left) pane
